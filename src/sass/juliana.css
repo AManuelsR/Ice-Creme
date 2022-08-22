@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-register {
+    width: 790px;
+    background: #FFB8CA;
+    padding: 35px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    font-family: 'DM Sans',
+        sans-serif;
+    color: #D41443 
+}
+
+.form-register h4 {
+    font-size: 69px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Titan One', cursive;
+    color: #D41443
+}
+
+
+.controls {
+    width: 40%;
+    background: #ffff;
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 3px solid #D41443;
+    font-size: 18px;
+    margin: 5px 215px;
+}
+
+.controls1 {
+    width: 40%;
+    background: #ffff;
+    text-align: ; 
+    padding: 63px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 3px solid #D41443;
+    font-size: 18px;
+    margin: 5px 215px;
+}
+
+.controls2 {
+    width: 25%;
+    background: #ffff;
+    text-align: center; 
+    padding: 1px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 3px solid #D41443;
+    font-size: 18px;
+    margin: 5px 25px;
+}
+.form-register h3 {
+    font-size: 20px;
+    margin: 1px 215px;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form-register a {
+    color: rgb(133, 88, 133);
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: darkmagenta;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 30%;
+    background: #ffff;
+    border: none;
+    padding: 14px;
+    color: #D41443;
+    margin: 5px 250px;
+    font-size: 26px;
+    border-radius: 90px;
+    font-family: 'DM Sans',
+        sans-serif;
+}
+.botons:hover {
+    background: #c5cdd5;
+    color: #D41443;
+}
+
+.work-images {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
