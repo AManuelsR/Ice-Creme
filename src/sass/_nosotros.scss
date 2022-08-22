@@ -1,0 +1,167 @@
+
+.seccion__nosotros{
+    width: 1200px;
+    height: 720px;
+    background: #FFF5F6;
+   
+}
+
+.seccion__subencabezado{
+    width: 1200px;
+    text-align: center;
+    background: #FFF5F6;
+}
+
+.seccion__subencabezado--texto{
+   
+    font-family: 'Titan Oane';
+    height: 34px;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    color: #FFA5BA;
+   
+
+    &:hover {
+        animation: springy-text; 
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        }
+        @keyframes springy-text {
+        0%   {
+            letter-spacing: 1.3em;
+        }
+        100%   {
+            letter-spacing: 0.2em;
+        }
+        }
+}
+
+.seccion__subencabezado--titulo{
+    
+    height: 66px;
+    font-family: 'Titan One';
+    color: #D41443;
+    font-size: 56px;
+    letter-spacing: 0.06em;
+
+    &:hover {
+        animation: springy-text; 
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        }
+        @keyframes springy-text {
+        0%   {
+            letter-spacing: 0.7em;
+        }
+        100%   {
+            letter-spacing: 0.1em;
+        }
+        }
+}
+
+.seccion__nosotros--menu{
+    
+    width: 100%;
+    height: 521px;
+    background-image: url('/src/images/sectionbg1.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.seccion__nosotros--bioeco{
+    width: 501px;
+    height: 501px;
+    opacity: 0.7;
+    border-radius: 50% 30% 50% 50%;
+
+    &:hover {
+        animation-name: girar;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+            
+        @keyframes girar {
+            0% {
+            transform: rotate(0deg);
+            }50% {
+          transform: rotate(40deg);
+            }        
+        }
+    }
+   
+}
+
+.seccion__nosotros--info{
+    margin-left: 90px;
+    width: 470px;
+    text-align: justify;
+      
+}
+
+.seccion__nosotros--texto1{
+    font-family: 'DM Sans';
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    font-weight: bold;
+    transform: scale(1);
+    color: #907E82;
+    transition: all linear 300ms;
+
+    &:hover{
+        transform: scale(1.2);
+        color: #000000;
+    }
+
+    
+}
+
+.seccion__nosotros--texto2,
+.seccion__nosotros--texto3{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    color: #907E82;
+    font-weight: bold;
+    transform: scale(1);
+    transition: all linear 300ms;
+
+    &:hover{
+        transform: scale(1.2);
+        color: #000000;
+    }
+}
+
+.seccion__nosotros--boton{
+    border: none;
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    color: #D41443;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all linear 300ms;
+
+    &:hover{
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(228, 218, 218);
+    }
+}
