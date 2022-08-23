@@ -6,7 +6,6 @@
     font-family: titan One;
     background-color: #FFFFFF;
     margin-bottom: 60px;
-    padding: 0 150px;
 
 &__titulos-header {
     text-align: center;
@@ -30,6 +29,22 @@
 &__articulos {
     display: flex;
     position: relative;
+    margin-top: 281px;
+    margin-left: 165px;
+}
+
+&__articulos__contenido__titulo-secundario {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 150px;
+}
+
+&__articulos__contenido__text {
+    font-family: dm sans;
+    text-align: center;
+    color: #fff;
 }
 
 &__articulos__aspecto {
