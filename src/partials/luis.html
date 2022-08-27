@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--link de soporte de caracteres-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--link viewport para controlar el espacio visible dentro del navegador-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyectoIceCream</title>
-    <link rel="stylesheet" href="/src/sass/galery&customer.css">
-    <link rel="stylesheet" href="/src/sass/galery&customer.scss"> 
-    <link rel="stylesheet" href="/css/modern-normalize.css">
+    <link rel="stylesheet" href="/src/sass/luisresponsive.css"> 
     <!--estos links son referentes a la fuente de texto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,50 +17,59 @@
 </head>
 <body>
     <main>
-        <div class="galery">
+        <section id="galery">
             <div class="photo">
-                <img src="/src/images/home-pic5 5.png" alt="galery" width="138" height="138.68">
+                <img src="/src/images/home-pic5 5.png" alt="galery" width="43.59" height="43.86">
             </div>
             <div class="photo">
-                <img src="/src/images/home-pic5 4.png" alt="galery" width="138" height="138.68">
-                <img src="/src/images/home-pic5 6.png" alt="galery" width="138" height="138.68">
+                <img src="/src/images/home-pic5 4.png" alt="galery" width="43.59" height="43.86">
+                <img src="/src/images/home-pic5 6.png" alt="galery" width="43.59" height="43.86">
             </div>
             <div class="photo">
-                <img src="/src/images/home-pic5 1.png" alt="galery" width="283" height="283.34">
-                <img src="/src/images/home-pic5 7.png" alt="galery" width="138" height="138.68">
+                <div class="big__image">
+                    <img src="/src/images/home-pic5 1.png" alt="galery" width="89.4" height="89.61">
+                </div>
+                <img src="/src/images/home-pic5 7.png" alt="galery" width="43.59" height="43.86">
+            </div>
+            <div class="photo end">
+                <img src="/src/images/home-pic5 9.png" alt="galery" width="43.59" height="43.86">
+                <img src="/src/images/home-pic5 8.png" alt="galery" width="43.59" height="43.86">
+            </div>
+            <div class="photo start">
+                <img src="/src/images/home-pic5 10.png" alt="galery" width="43.59" height="43.86">
+                <img src="/src/images/home-pic5 12.png" alt="galery" width="43.59" height="43.86">
             </div>
             <div class="photo">
-                <img src="/src/images/home-pic5 9.png" alt="galery" width="138" height="138.68">
-                <img src="/src/images/home-pic5 8.png" alt="galery" width="138" height="138.68">
+                <img src="/src/images/home-pic5 11.png" alt="galery" width="43.59" height="43.86">
             </div>
-            <div class="photo">
-                <img src="/src/images/home-pic5 10.png" alt="galery" width="138" height="138.68">
-                <img src="/src/images/home-pic5 12.png" alt="galery" width="138" height="138.68">
-            </div>
-            <div class="photo">
-                <img src="/src/images/home-pic5 11.png" alt="galery" width="138" height="138.68">
-            </div>
-        </div>
-        <div id="contentCarrusel">
-            <div class="carruselTestimonials" id="carruselTestimonials-1">
-                <div class="carruselItems" id="testimony-1">
-                    <img src="/src/images/testimonials1 1.png" alt="galery" width="85" height="85">
-                    <div class="contentTestimony">
-                        <p class="testimony">
+        </section>
+        <br>
+        <section id="customer__slide">
+            <div class="card one" id="carruselTestimonials-1">
+                <div class="card__items" id="testimony-1">
+                    <img src="/src/images/testimonials1 1.png" id="customer__photo" alt="galery" width="85" height="85">
+                    <div class="content__testimony">
+                        <p class="text__testimony">
                             Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
                         </p>
-                        <img src="/src/images/“.png" id="quotationMarks" alt="galery" width="54px" height="40px">
+                        <img src="/src/images/“.png" id="quotation__marks" alt="galery" width="54px" height="40px">
                     </div>
-                    <div>
-                        <img src="/src/images/Ellipse 6.png" alt="galery" width="4px" height="4px">
-                        <img src="/src/images/Ellipse 6.png" alt="galery" width="4px" height="4px"> 
-                        <img src="/src/images/Ellipse 6.png" alt="galery" width="4px" height="4px">                     
+                    <div class="decorative__points">
+                        <svg width="4px" height="4px">
+                            <circle r="100" fill="#D31342"/>
+                        </svg>
+                        <svg width="4px" height="4px">
+                            <circle r="100" fill="#D31342"/>
+                        </svg>
+                        <svg width="4px" height="4px">
+                            <circle r="100" fill="#D31342"/>
+                        </svg>
                     </div>
-                    <h2 class="datesTestimony">Emily, Los Angeles</h2>
-                    <div id="contentPoints">
-                        <i class="fa-solid fa-house" id="iconHome"></i>
-                        <i class="fa-solid fa-circle" id="iconCircle"></i>
-                        <i class="fa-solid fa-circle" id="iconCircle"></i>
+                    <h2 class="customer__name">Emily, Los Angeles</h2>
+                    <div class="indicative__points">
+                        <i class="fa-solid fa-house" id="icon__home"></i>
+                        <i class="fa-solid fa-circle" id="icon__circle"></i>
+                        <i class="fa-solid fa-circle" id="icon__circle"></i>
                     </div>
                 </div>
                 <div class="carruselArrows">
@@ -72,67 +81,63 @@
                     </a>
                 </div>
             </div>
-            <div class="carruselTestimonials" id="carruselTestimonials-2">
-                <div class="carruselItems" id="testimony-2">
-                    <img src="/src/images/testimonials1 4.png" alt="galery" width="85" height="85">
-                    <div class="contentTestimony">
-                        <p class="testimony">
+            <div class="card two" id="carruselTestimonials-2">
+                <div class="card__items" id="testimony-2">
+                    <img src="/src/images/testimonials1 4.png" id="customer__photo" alt="galery" width="85" height="85">
+                    <div class="content__testimony">
+                        <p class="text__testimony">
                             Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
                         </p>
-                        <img src="/src/images/“.png" id="quotationMarks" alt="galery" width="54px" height="40px">
+                        <img src="/src/images/“.png" id="quotation__marks" alt="galery" width="54px" height="40px">
                     </div>
-                    <div>
-                        <img src="/src/images/Ellipse 6.png" alt="galery" width="4px" height="4px">
-                        <img src="/src/images/Ellipse 6.png" alt="galery" width="4px" height="4px"> 
-                        <img src="/src/images/Ellipse 6.png" alt="galery" width="4px" height="4px">                     
+                    <div class="decorative__points">
+                        <svg width="4px" height="4px">
+                            <circle r="100" fill="#D31342"/>
+                        </svg>
+                        <svg width="4px" height="4px">
+                            <circle r="100" fill="#D31342"/>
+                        </svg>
+                        <svg width="4px" height="4px">
+                            <circle r="100" fill="#D31342"/>
+                        </svg>
                     </div>
-                    <h2 class="datesTestimony">Agata, California</h2>
-                    <div id="contentPoints">
-                        <i class="fa-solid fa-circle" id="iconCircle"></i>
-                        <i class="fa-solid fa-house" id="iconHome"></i>
-                        <i class="fa-solid fa-circle" id="iconCircle"></i>
+                    <h2 class="customer__name">Agata, California</h2>
+                    <div class="indicative__points">
+                        <i class="fa-solid fa-circle" id="icon__circle"></i>
+                        <i class="fa-solid fa-house" id="icon__home"></i>
+                        <i class="fa-solid fa-circle" id="icon__circle"></i>
                     </div>
-                </div>
-                <div class="carruselArrows">
-                    <a href="#carruselTestimonials-1">
-                        <i class="fa-solid fa-chevron-left" id="arrows"></i>
-                    </a>
-                    <a href="#carruselTestimonials-3">
-                        <i class="fa-solid fa-chevron-right" id="arrows"></i>
-                    </a>
                 </div>
             </div>
-            <div class="carruselTestimonials" id="carruselTestimonials-3">
-                <div class="carruselItems" id="testimony-3">
-                    <img src="/src/images/testimonials1 3.png" alt="galery" width="85" height="85">
-                    <div class="contentTestimony">
-                        <p class="testimony">
+            <div class="card three" id="carruselTestimonials-3">
+                <div class="card__items" id="testimony-3">
+                    <img src="/src/images/testimonials1 3.png" id="customer__photo" alt="galery" width="85" height="85">
+                    <div class="content__testimony">
+                        <p class="text__testimony">
                             Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
                         </p>
-                        <img src="/src/images/“.png" id="quotationMarks" alt="galery" width="54px" height="40px">
+                        <img src="/src/images/“.png" id="quotation__marks" alt="galery" width="54px" height="40px">
                     </div>
-                    <div>
-                        <img src="/src/images/Ellipse 6.png" alt="galery" width="4px" height="4px">
-                        <img src="/src/images/Ellipse 6.png" alt="galery" width="4px" height="4px"> 
-                        <img src="/src/images/Ellipse 6.png" alt="galery" width="4px" height="4px">                     
+                    <div class="decorative__points">
+                        <svg width="4px" height="4px">
+                            <circle r="100" fill="#D31342"/>
+                        </svg>
+                        <svg width="4px" height="4px">
+                            <circle r="100" fill="#D31342"/>
+                        </svg>
+                        <svg width="4px" height="4px">
+                            <circle r="100" fill="#D31342"/>
+                        </svg>
                     </div>
-                    <h2 class="datesTestimony">Mila, New York City</h2>
-                    <div id="contentPoints">
-                        <i class="fa-solid fa-circle" id="iconCircle"></i>                        
-                        <i class="fa-solid fa-circle" id="iconCircle"></i>
-                        <i class="fa-solid fa-house" id="iconHome"></i>
+                    <h2 class="customer__name">Mila, New York City</h2>
+                    <div class="indicative__points">
+                        <i class="fa-solid fa-circle" id="icon__circle"></i>                        
+                        <i class="fa-solid fa-circle" id="icon__circle"></i>
+                        <i class="fa-solid fa-house" id="icon__home"></i>
                     </div>
-                </div>
-                <div class="carruselArrows">
-                    <a href="#carruselTestimonials-2" id="arrows">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </a>
-                    <a href="#carruselTestimonials-1" id="arrows">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
     
