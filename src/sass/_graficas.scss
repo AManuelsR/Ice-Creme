@@ -1,76 +1,176 @@
 .numeros{
-    width: 1200px;
+    width: 320px;
+    height: 600px;
+    margin: 0 auto;
+    background: #FFF5F6;
 }
+    .contenedor{
+        
+        width: 100%;
+        height: 350px;        
+    }
 
-.contenedor{
-    width: 100%;
-    height: 350px;   
+    .numero__lista--estadistica{
+        padding: 10px;
+        width: 100%;
+        height: 200px;
+        list-style: none;        
+    }
+
+    .numero__lista--logo{
+        animation: rotation 4s infinite linear;
     
-}
-
-
-.numero__lista{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;   
-    overflow: hidden;
-    
-    &:hover > *{
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }to{
+                transform: rotate(359deg);
+            }
             
+        }
+    }
+
+    .numero__lista:hover .numero__lista--uno{
+        transform: translateX(50px) translateY(20);
+        scale: 1.2;
+    }
+
+    .numero__lista:hover .numero__lista--dos {
+        scale: 1.2;
+    }
+
+    .numero__lista:hover .numero__lista--tres{
+        transform: translateX(50px) translateY(-20);
+        scale: 1.2;
+    }
+
+    .numero__lista--titulo{
+        
+        width: 98px;
+        height: 56px;
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        color: #D41443;
+        
+    }
+    
+    .numero__lista--texto{
+        width: 230px;
+        height: 36px;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 170%;
+        color: #000000;
+    }
+
+@media screen and (min-width: 768px) {
+    .numeros{
+       
+        width: 768px;
+        height: 300px;        
+        background: #FFF5F6;
+        margin-bottom: 10px;
+    }
+
+    .numero__lista{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;   
+        overflow: hidden;
+
+        &:hover > * {
             animation-name: rotar;
             animation-duration: 5s;
-            animation-timing-function: linear;
+            animation-timing-function: ease-in-out;
             animation-iteration-count: 1;
+            animation-direction: alternate;
+            
+            
                 
             @keyframes rotar {
-                from {
+                0% {
                 transform: rotate(0deg);
-                 } to {
-              transform: rotate(360deg);
-              }        
+                } 50%{
+                transform: rotate(360deg);
+                
+                } 100%{
+                    transform: rotate(0deg);                    
+                }     
             }
-    }
-}
-
-.numero__lista--estadistica{    
-    margin: 65px;
-    width: 300px;
-    list-style: none;   
-}
-
-.numero__lista--logo{
-    animation: rotation 4s infinite linear;
-
-    @keyframes rotation {
-        from {
-            transform: rotate(0deg);
-        }to{
-            transform: rotate(359deg);
         }
+    }
+
+    .numero__lista--estadistica{    
+        
+        padding: 10px;
+        width: 185px;
+        height: 250px;
+        list-style: none;        
+    }
+
+    .numero__lista:hover .numero__lista--uno{
+        transform: translateX(0) translateY(0);
+        scale: 1;
+    }
+
+    .numero__lista:hover .numero__lista--dos {
+        scale: 1;
+    }
+
+    .numero__lista:hover .numero__lista--tres{
+        transform: translateX(0) translateY(0);
+        scale: 1;
+    }
+
+    .numero__lista--titulo{
+        
+        font-size: 48px;
+        line-height: 55px;
+        
+    }
+    
+    .numero__lista--texto{
+        font-size: 14px;
+        line-height: 174%;
         
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .numeros{
+     
+       width: 1200px;
+       height: 370px;
+       
+    }
+        
 
-.numero__lista--titulo{
-    margin: 10px;
-    font-family: 'Titan One';
-    font-style: normal;
-    font-size: 58px;
-    line-height: 66px;
-    letter-spacing: 0.04em;
-    color: #D41443;
+    .numero__lista--estadistica{    
+        
+        width: 317px;
+        height: 250px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .numero__lista--titulo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 65px;
+        font-size: 58px;
+        
+    }
     
-}
+    .numero__lista--texto{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 176%;
+        text-align: justify;
+        letter-spacing: 0.02em;
+    }
 
-.numero__lista--texto{
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 176%;
-    text-align: justify;
-    letter-spacing: 0.02em;
-    color: #000000;
 }
