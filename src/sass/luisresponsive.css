@@ -187,7 +187,7 @@
 .customer__name {
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 186%;
     text-align: center;
     color: #000000;
@@ -224,3 +224,58 @@
   #arrows {
     display: none;
   }
+
+  /*brake point for tablet*/
+
+@media screen and (min-width: 768px) {
+
+    #customer__photo {
+        margin-bottom: 20px;
+    }
+
+    .content__testimony {
+        width: 620px;
+        height: 164px;
+    }
+
+    .text__testimony {
+        width: 514.12px;
+        height: 83px;
+        font-size: 14px;
+        Line height: 30.24px;
+    }
+
+    #quotation__marks {
+        top: 25px;
+        left: 20px;
+    }
+
+    .customer__name {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .content__testimony {
+            width: 968px;
+            height: 138px;
+        }
+
+        .text__testimony {
+            width: 750px;
+            height: 52px;
+            font-size: 16px;
+            Line height: 29.76px;
+        }
+
+        #quotation__marks {
+            top: 32px;
+            left: 92px;
+        }
+
+        .customer__name {
+            font-size: 20px;
+        }
+
+    }
+}
