@@ -181,7 +181,7 @@
 }
 
 .decorative__points {
-    margin-bottom: 16px;
+    margin-bottom: 16px
 }
 
 .customer__name {
@@ -242,7 +242,7 @@
         width: 514.12px;
         height: 83px;
         font-size: 14px;
-        Line height: 30.24px;
+        line-height: 30.24px;
     }
 
     #quotation__marks {
@@ -254,28 +254,29 @@
         font-size: 16px;
     }
 
-    @media screen and (min-width: 1200px) {
+}
 
-        .content__testimony {
-            width: 968px;
-            height: 138px;
-        }
+@media screen and (min-width: 1200px) {
 
-        .text__testimony {
-            width: 750px;
-            height: 52px;
-            font-size: 16px;
-            Line height: 29.76px;
-        }
-
-        #quotation__marks {
-            top: 32px;
-            left: 92px;
-        }
-
-        .customer__name {
-            font-size: 20px;
-        }
-
+     .content__testimony {
+         width: 968px;
+         height: 138px;
     }
+
+     .text__testimony {
+         width: 750px;
+         height: 52px;
+          font-size: 16px;
+          line-height: 29.76px;
+    }
+
+     #quotation__marks {
+         top: 32px;
+         left: 92px;
+    }
+
+     .customer__name {
+          font-size: 20px;
+    }
+
 }
