@@ -1079,6 +1079,15 @@
         transform: translateX(0px);
       }
     }
+    .modal{
+      display: none;
+    }
+    .popup{
+      display: none;
+      &__intconten{
+        display: none;
+      }
+    }
     } 
   /* laptop */
   @media only screen and (min-width:768px) and (max-width:1024px){
@@ -1284,7 +1293,7 @@
       transform: rotate(90deg);
     }
     
-    .over-lay {
+    .modal {
       background-color: rgba(249, 220, 251, 0.3);
       position: fixed;
       top: 0;
@@ -1295,7 +1304,7 @@
       height: 100%;
       visibility: hidden;
     }
-    .over-lay .popup {
+    .popup {
       margin-top: 5px;
       margin-bottom: 5px;
       width: 37%;
