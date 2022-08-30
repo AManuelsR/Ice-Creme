@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+.products {
+    font-family: titan One;
+    background-color: #FFFFFF;
+    margin-bottom: 60px;
+
+&__titulos-header {
+    text-align: center;
+}
+
+&__titulos-header--titulo-principal {
+    text-align: center;
+    color: #D41443;
+    font-size: 58px;
+    margin-top: 16px;
+}
+
+&__titulos-header--natural {
+    color: #FFA5BA;
+    font: 400;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+&__articulos {
+    display: flex;
+    position: relative;
+    margin-top: 281px;
+    margin-left: 165px;
+}
+
+&__articulos__contenido__titulo-secundario {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 150px;
+}
+
+&__articulos__contenido__text {
+    font-family: dm sans;
+    text-align: center;
+    color: #fff;
+}
+
+&__articulos__aspecto {
+    width: 368px;
+    height: 394px;
+    position: absolute;
+    z-index: 2;
+}
+
+&__articulos__articulo-1 {
+    width: 368px;
+    height: 535px;
+    background-color: #FFB8CA;
+    margin-right: 32px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+&__articulos__articulo-2 {
+    width: 368px;
+    height: 535px;
+    background-color: #F0D1A5;
+    margin-right: 32px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+&__articulos__articulo-3 {
+    width: 368px;
+    height: 535px;
+    background-color: #C2E297;
+    margin-right: 32px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+} 

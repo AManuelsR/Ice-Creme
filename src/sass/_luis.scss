@@ -141,14 +141,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
 }
 
-.card__items img {
-    margin-bottom: 32px;
-}
+@keyframes rotateY {
+    0% {
+      transform: rotateY(0deg);
+    }
+  
+    100% {
+      transform: rotateY(60deg);
+    }
+  }
 
 #customer__photo {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .content__testimony {
@@ -181,17 +188,17 @@
 }
 
 .decorative__points {
-    margin-bottom: 16px;
+    margin-bottom: 16px
 }
 
 .customer__name {
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 186%;
     text-align: center;
     color: #000000;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .indicative__points {
@@ -209,11 +216,12 @@
     color: #D9D9D9;
 }
 
-.carruselArrows {
+.slide__arrows {
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
+    border: none;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -222,5 +230,74 @@
   }
   
   #arrows {
+    color: #D9D9D9;
+    position: relative;
+    margin-bottom: 161px;
     display: none;
   }
+
+  /*brake point for tablet*/
+
+@media screen and (min-width: 768px) {
+
+    #customer__photo {
+        margin-bottom: 20px;
+    }
+    
+    .content__testimony {
+        width: 620px;
+        height: 164px;
+        margin-bottom: 4px;        
+    }
+
+    .text__testimony {
+        width: 514.12px;
+        height: 83px;
+        font-size: 14px;
+        line-height: 30.24px;
+    }
+
+    #quotation__marks {
+        top: 25px;
+        left: 20px;
+    }
+
+    .customer__name {
+        font-size: 16px;
+    }
+
+    #arrows {
+        display: grid;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+     .content__testimony {
+         width: 968px;
+         height: 138px;
+    }
+
+     .text__testimony {
+         width: 750px;
+         height: 52px;
+          font-size: 16px;
+          line-height: 29.76px;
+    }
+
+     #quotation__marks {
+         top: 32px;
+         left: 92px;
+    }
+
+     .customer__name {
+          font-size: 20px;
+    }
+    
+    #arrows {
+        display: grid;
+        margin-bottom: 169px;
+    }
+
+}
